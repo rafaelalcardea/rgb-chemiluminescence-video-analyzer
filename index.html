@@ -113,8 +113,7 @@ async function startCamera(){
     statusEl.textContent='Câmera aberta.';
     updateButtons();
   }catch(err){
-    const msg='Erro ao abrir câmera: '+err.message+'
-Verifique a permissão da câmera e use HTTPS.';
+    const msg='Erro ao abrir câmera: '+err.message+'\nVerifique a permissão da câmera e use HTTPS.';
     statusEl.textContent=msg;
     alert(msg);
   }
